@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../fonts/FuturaPT-Book.eot');
+    src: url('FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Book.woff') format('woff'),
+        url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.conteiner {
+    max-width: 1920px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*-----------header-----------*/
+
+.header {
+    background: linear-gradient(to right, #115e99, #1b73b8, #2488d5);
+    font-family: 'Futura PT Book';
+}
+
+.header {}
+
+
+
+
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px 195px;
+
+    position: relative;
+}
+
+.header__menu-item {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__box-link {
+    font-size: 24px;
+    line-height: 21.6px;
+    color: #f0f5f9;
+    display: block;
+}
+
+
+
+.header__box-btn {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #fff;
+    display: block;
+}
+
+.header__box-btn::after {
+    content: url('../images/header__arrow.png');
+    padding-left: 50px;
+    position: relative;
+    top: 3px;
+}
+
+
+.header__item-box {}
+
+.header__box-link {}
+
+.header__box-btn {}
+
+.header__menu-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__logo-text {}
+
+.header__logo-text h1 {
+    font-size: 39px;
+    line-height: 46.8px;
+}
+
+.header__logo-text p {
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+.header__menu-btn {
+    display: flex;
+    cursor: pointer;
+}
+
+.header__menu-btn p {
+    font-size: 18px;
+    line-height: 21.6px;
+    position: relative;
+    color: #f1f7fc;
+    top: -20px;
+}
+
+.header__menu-btn p::after {
+    content: url('../images/header__close.png');
+    position: relative;
+    top: 15px;
+    padding-left: 20px;
+}
+
+
+.header__wrapp {
+    padding-bottom: 133px;
+}
+
+.header__wrapp-conteiner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header__conteiner-box {
+    padding: 50px 50px 47px;
+    border-radius: 10px;
+    margin: 0 25px 51px;
+    width: 417px;
+
+    transition: .4s;
+}
+
+.header__back-one {
+    background: #fff url('../images/products_back.png') no-repeat right bottom;
+}
+
+.header__back-two {
+    background: #fff url('../images/project__back.png') no-repeat right bottom;
+}
+
+.header__back-three {
+    background: #fff url('../images/portfolio__back.png') no-repeat right bottom;
+}
+
+.header__back-four {
+    background: #fff url('../images/blog__back.png') no-repeat right bottom;
+}
+
+.header__back-five {
+    background: #fff url('../images/company__back.png') no-repeat right bottom;
+}
+
+.header__back-six {
+    background: #fff url('../images/structure__back.png') no-repeat right bottom;
+}
+
+.header__conteiner-box-one {
+    width: 660px;
+    padding: 50px 50px 36px 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header__conteiner-box img {
+    padding-bottom: 27px;
+}
+
+.header__conteiner-box-one img {
+    padding-bottom: 14px;
+}
+
+.header__conteiner-box h3 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #303030;
+}
+
+.header__conteiner-btn>span::after {
+    content: url('../images/header__btn-arrow.png');
+}
+
+.header__conteiner-box-one>.header__conteiner-text>.header__conteiner-btn>span::after {
+    position: relative;
+    top: 73px;
+    left: 83%;
+}
+
+.header__conteiner-text-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__conteiner-text-two h3 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #303030;
+}
+
+.header__conteiner-box:hover {
+    box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.35);
+}
+
+.header__conteiner-box:hover .header__conteiner-text h3 {
+    color: #1773ba;
+}
+
+.header__conteiner-box:hover .header__conteiner-btn>span::after {
+    content: url('../images/header__btn-arrow-active.png');
+}
