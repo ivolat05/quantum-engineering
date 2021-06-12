@@ -11,6 +11,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -20,6 +24,8 @@ body {
     font-weight: 400;
     line-height: 21px;
     color: #fff;
+
+    background: #edeef0;
 }
 
 a {
@@ -507,4 +513,101 @@ ul {
 
 .footer__item-box-one {
     padding-bottom: 60px;
+}
+
+/*--------------portfolio-------------------*/
+
+.portfolio__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio__wrapper-box {
+    width: 885px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+
+    margin: 25px 0;
+}
+
+.portfolio__box-inner {
+    padding-right: 39px;
+}
+
+.portfolio__box-inner img {
+    padding-bottom: 20px;
+
+}
+
+.portfolio__inner-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio__inner-img img {
+    cursor: pointer;
+}
+
+.portfolio__wrapper-text {
+    text-align: left;
+}
+
+.portfolio__wrapper-text h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #353636;
+
+    padding-bottom: 27px;
+}
+
+.portfolio__wrapper-text p strong {
+    font-weight: 500;
+    color: #303030;
+    padding-right: 17px;
+}
+
+
+.portfolio__wrapper-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #303030;
+    padding-bottom: 30px;
+}
+
+
+.scrol__top {
+    background: #edeef0;
+    width: 60px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 25px 0 45px;
+}
+
+.scrol__top {
+    font-family: 'Futura PT Book';
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #cfd0d1;
+
+    transition: .4s;
+}
+
+.scrol__top::before {
+    content: url('../images/button__top.png');
+}
+
+.scrol__top:hover {
+    color: #979797;
+}
+
+.scrol__top:hover::before {
+    content: url('../images/button__top-active.png');
 }
