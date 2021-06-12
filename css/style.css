@@ -175,6 +175,7 @@ ul {
 
 .header__box-link,
 .footer__box-link {
+    font-family: 'Futura PT Book';
     font-size: 24px;
     line-height: 28.8px;
     color: #f0f5f9;
@@ -183,19 +184,24 @@ ul {
 
 
 
-.header__box-btn,
-.footer__box-btn {
+.header__box-link>span,
+.footer__box-link>span {
+    font-family: 'Futura PT Book';
     font-size: 18px;
     line-height: 21.6px;
     color: #fff;
     display: block;
 }
 
-.header__box-btn::after {
+.header__box-link span::after {
     content: url('../images/header__arrow.png');
     padding-left: 50px;
     position: relative;
     top: 3px;
+}
+
+.header__box-link-two span::after {
+    padding-left: 40px;
 }
 
 
@@ -381,14 +387,21 @@ ul {
 }
 
 
-.footer__box-btn,
-.footer__box-link {
+.footer__box-link,
+.footer__box-link>span {
     color: #B2B2B2;
 }
 
-.footer__box-btn::after {
+.footer__box-link span::after {
     content: url('../images/footer__arrow.png');
-    padding-left: 37px;
+    padding-left: 50px;
+    position: relative;
+    top: 3px;
+}
+
+.footer__box-link-two span::after {
+    content: url('../images/footer__arrow.png');
+    padding-left: 40px;
     position: relative;
     top: 3px;
 }
@@ -400,15 +413,19 @@ ul {
     color: #B2B2B2;
     display: block;
 
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 
-.footer__wrapp-inner>a::after {
-    content: url('../images/footer__arrow.png');
+.footer__wrapp-inner>a>span {
+    font-size: 18px;
+    line-height: 21.6px;
+}
 
+.footer__wrapp-inner>a>span::after {
+    content: url('../images/footer__arrow.png');
+    padding-left: 132px;
     position: relative;
-    top: 30px;
-    right: 32px;
+    top: 3px;
 }
 
 .footer__wrapp-text h4 {
