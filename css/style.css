@@ -802,6 +802,7 @@ ol>li::before {
 input {
     width: 835px;
     height: 60px;
+    border: 1px solid #999999;
 }
 
 .form p {
@@ -886,8 +887,6 @@ textarea {
     text-decoration: underline;
 }
 
-.form__textarea-inner {}
-
 .calculation__btn {
     width: 730px;
     display: flex;
@@ -938,7 +937,8 @@ button:active {
     box-shadow: 0px 3px 8.6px 1.4px rgba(27, 130, 209, 0.48);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     outline-color: #606060;
 }
 
@@ -989,6 +989,63 @@ input:focus {
 
 }
 
+/*--------------------request------------------*/
+
+.request__close {
+    position: absolute;
+    top: 18px;
+    right: 23px;
+}
+
+.request__wrapper {
+    margin: 30px auto;
+    max-width: 800px;
+    background: #fff;
+    padding: 33px 71px 40px 57px;
+    position: relative;
+}
+
+.request__wrapper input {
+    max-width: 670px;
+    margin-bottom: 33px;
+    border: 1px solid #999999;
+}
+
+.request__btn .calculation__checbox {
+    margin: 21px auto;
+}
+
+.request__wrapper textarea {
+    max-width: 670px;
+
+}
+
+.request__btn {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+}
+
+.request__btn .check {
+    margin: 0 auto;
+}
+
+.request h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #353636;
+    text-align: center;
+
+    padding-bottom: 22px;
+}
+
+.request p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #353636;
+}
 
 /*---------------shema------------------*/
 
