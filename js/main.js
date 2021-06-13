@@ -8,4 +8,8 @@ $(function () {
             $('.header').removeClass('header__active')
     });
 
+    $('#choose-file').inputFileText({
+        text: 'Прикрепить'
+    });
+
 });

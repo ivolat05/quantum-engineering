@@ -19,7 +19,7 @@
         <div class="conteiner">
             <div class="active__box">
                 <h2>
-                    Главная страница
+                    Рассчитать проект дороги
                 </h2>
                 <div class="active__box-inner">
                     <h2>
@@ -149,6 +149,140 @@
         </div>
     </header>
 
+    <section class="calculation">
+        <div class="conteiner">
+            <div class="scrol">
+                <a href="#" class="scrol__left">
+                    Вернуться назад
+                </a>
+            </div>
+            <div class="calculation__wrapper">
+                <h2>
+                    Заполните исходные данные для расчета дороги
+                </h2>
+                <form class="form" action="/" method="POST">
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Ваше имя или название организации*
+                            </p>
+                            <input type="text" required>
+                        </div>
+                        <div class="form__box-inner">
+                            <p>
+                                Ваш e-mail*
+                            </p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Ваше имя или название организации*
+                            </p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Номер телефона
+                            </p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <p>
+                        Для предварительного расчета автомобильной дороги, используются только основные параметры.<br>
+                        Для наглядности, расчет осуществляется на прямом участке дороги определенной длины.<br>
+                        Более детальный расчет осуществляется при уточнении всех особенностей дорожного участка.
+                    </p>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Общая ширина проезжей части с твердым покрытием*
+                            </p>
+                            <input type="text" required>
+                        </div>
+                        <div class="form__box-inner">
+                            <p>
+                                Шаг опор линии освещения*
+                            </p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Высота расположения светильников от уровня проезжей части, м*
+                            </p>
+                            <input type="text" required>
+                        </div>
+                        <div class="form__box-inner">
+                            <p>
+                                Расстояние опор освещения от края проезжей части , м (если уже установлены)
+                            </p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Наличие тротуара с одной/двух сторон от проезжей части?
+                            </p>
+                            <input type="text">
+                        </div>
+                        <div class="form__box-inner">
+                            <p>
+                                Ширина тротуара/тротуаров, м
+                            </p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form__box">
+                        <div class="form__box-inner">
+                            <p>
+                                Требуемая средняя освещенность дорожного полотна, ли
+                            </p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form__box-textarea">
+                        <p>
+                            Комментарий
+                        </p>
+                        <textarea></textarea>
+                        <div class="form__textarea-inner">
+                            <p>
+                                Прикрепите план / схему<br>
+                                <span>
+                                    не более 3
+                                </span>
+                            </p>
+                            <div>
+                                <input type="file" id="choose-file">
+                                <img src="images/form__img.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="calculation__btn">
+                        <button type="submit"> Отправить</button>
+                        <div class="calculation__checbox">
+                            <label class='check'>
+                                <input class='check__input' checked type='checkbox'>
+                                <span class="check__box"></span>
+                            </label>
+                            <p>
+                                Я согласен на обработку<br>
+                                персональных данных
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
 
 
     <footer class="footer">
@@ -234,6 +368,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src='js/jquery-input-file-text.js'></script>
     <script src="js/main.js"></script>
 </body>
 

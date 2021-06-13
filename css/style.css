@@ -771,3 +771,224 @@ ol>li::before {
     content: counter(myCounter) ') ';
     counter-increment: myCounter;
 }
+
+/*-------------calculation---------------*/
+.calculation {}
+
+.conteiner {}
+
+
+
+.calculation__wrapper {
+    background: #fff;
+    border-radius: 5px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.calculation__wrapper h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #424343;
+    text-align-last: left;
+
+    padding-bottom: 35px;
+}
+
+.calculation__wrapper p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #424343;
+}
+
+input {
+    width: 835px;
+    height: 60px;
+}
+
+.form p {
+    padding: 10px 0 38px;
+}
+
+
+.form__box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 42px;
+}
+
+.form__box-inner p {
+    padding-bottom: 14px;
+}
+
+.form__box-inner input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(96, 96, 96);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form__box-inner input:required:invalid {
+    color: #a63737;
+}
+
+
+.form__box-textarea p {
+    padding-bottom: 14px;
+}
+
+textarea {
+    width: 835px;
+    height: 140px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(96, 96, 96);
+    padding: 20px;
+    resize: none;
+
+}
+
+.form__textarea-inner {
+    width: 835px;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+
+.form__textarea-inner p span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #999999;
+}
+
+.form__textarea-inner input {
+    border: none;
+    background: #fff;
+    width: 142px;
+    padding: 0;
+
+    border-radius: 5px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #8bb9dc;
+    cursor: pointer;
+}
+
+.form__textarea-inner img {
+    position: relative;
+    top: 5px;
+    left: -14px;
+}
+
+
+.form__textarea-inner input:hover {
+    text-decoration: underline;
+}
+
+.form__textarea-inner {}
+
+.calculation__btn {
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.calculation__checbox {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculation__checbox input {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.calculation__checbox p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #999999;
+    padding: 0;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 60px;
+    color: rgb(255, 255, 255);
+    padding: 23px 164px;
+    border-radius: 60px;
+    border: 1px solid rgb(23, 115, 186);
+    background: linear-gradient(to right, #115e99, #1b73b8, #2488d5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(27, 130, 209);
+}
+
+button:active {
+    box-shadow: 0px 3px 8.6px 1.4px rgba(27, 130, 209, 0.48);
+}
+
+input:focus {
+    outline-color: #606060;
+}
+
+/*-----------checbox-------------*/
+.check {
+    padding-left: 1em;
+}
+
+.check__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    margin-top: -0.8em;
+    margin-left: -1em;
+    width: 20px;
+    height: 20px;
+    background: url('../images/checbox.png') no-repeat;
+}
+
+.check__input:checked+.check__box {
+    background: url('../images/checbock__active.png') no-repeat;
+}
+
+.check__input:focus+.check__box {
+    background: url('../images/check.png') no-repeat;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.check__input:focus:checked+.check__box {
+    background: url('../images/checbock__active.png') no-repeat;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.check__input:disabled+.check__box {
+    background: url('../images/check-_deseibal.png') no-repeat;
+
+}
+
+.check__input:checked:disabled+.check__box {
+    background: url('../images/check__deseibal-active.png') no-repeat;
+
+}
