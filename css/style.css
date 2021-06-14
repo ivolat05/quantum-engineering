@@ -1087,6 +1087,7 @@ textarea:focus {
 }
 
 .schema__inner-text-1 p {
+    width: 241px;
     top: 154px;
     left: 164px;
 }
@@ -1101,6 +1102,7 @@ textarea:focus {
 
 
 .schema__inner-text-2 p {
+    width: 338px;
     top: 140px;
     left: 514px;
 }
@@ -1115,6 +1117,7 @@ textarea:focus {
 
 
 .schema__inner-text-3 p {
+    width: 314px;
     left: 981px;
     top: 97px;
 }
@@ -1127,6 +1130,7 @@ textarea:focus {
 }
 
 .schema__inner-text-4 p {
+    width: 314px;
     left: 1544px;
     top: 236px;
 }
@@ -1139,6 +1143,7 @@ textarea:focus {
 }
 
 .schema__inner-text-5 p {
+    width: 253px;
     left: 196px;
     top: 559px;
 }
@@ -1151,6 +1156,7 @@ textarea:focus {
 }
 
 .schema__inner-text-6 p {
+    width: 314px;
     left: 1572px;
     top: 457px;
 }
@@ -1163,6 +1169,7 @@ textarea:focus {
 }
 
 .schema__inner-text-7 p {
+    width: 379px;
     left: 326px;
     top: 697px;
 }
@@ -1175,6 +1182,7 @@ textarea:focus {
 }
 
 .schema__inner-text-8 p {
+    width: 381px;
     left: 1060px;
     top: 715px;
 }
@@ -1188,6 +1196,7 @@ textarea:focus {
 
 
 .schema__inner-text-9 p {
+    width: 314px;
     left: 1488px;
     top: 647px;
 }
@@ -1201,7 +1210,7 @@ textarea:focus {
 
 
 .schema__inner-img {
-    padding: 215px 0;
+    padding: 215px 333px;
     text-align: center;
 }
 
@@ -2436,4 +2445,15 @@ li span:nth-child(2) {
     .blog__content-box {
         margin: 10px;
     }
+}
+
+/*-------------------devices------------*/
+.schema {
+    overflow: hidden;
+}
+
+
+.schema__wrapp {
+
+    overflow-x: scroll;
 }
