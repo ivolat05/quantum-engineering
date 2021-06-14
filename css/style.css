@@ -2572,3 +2572,38 @@ li span:nth-child(2) {
         text-align: left;
     }
 }
+
+/*-------------------portfolio-----------------*/
+@media(max-width:1810px) {
+    .portfolio__wrapper-box {
+        width: 754px;
+    }
+}
+
+@media(max-width: 1570px) {
+    .portfolio__wrapper {
+        display: block;
+    }
+
+    .portfolio__wrapper-box {
+        margin: 10px auto;
+    }
+}
+
+@media(max-width:790px) {
+    .portfolio__wrapper-box {
+        display: block;
+        width: 380px;
+    }
+
+    .portfolio__box-inner img {
+        width: 100%;
+    }
+}
+
+@media(max-width:470px) {
+    .portfolio__wrapper-box {
+        width: 300px;
+        padding: 10px;
+    }
+}
