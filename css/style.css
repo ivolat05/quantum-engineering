@@ -1503,7 +1503,30 @@ textarea:focus {
 
 
 /*-------------------slaiders----------------*/
+.slaider {
+    position: relative;
+    overflow: hidden;
+}
 
+.slaider__box {
+    height: 94%;
+    width: 300px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -167px;
+}
+
+.slaider__box-2 {
+    height: 94%;
+    width: 300px;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -167px;
+}
 
 .street__conteiner {
     display: flex;
@@ -1562,11 +1585,62 @@ textarea:focus {
 }
 
 .slick-prev {
-    left: 38px;
+    left: -136px;
 }
 
 .slick-next {
-    right: 38px;
+    right: -136px;
+
+    border-radius: 5px;
+
+}
+
+.slick-next::after {
+    content: 'Предыдущий товар';
+    font-family: 'Futura PT Book';
+    font-size: 12px;
+    line-height: 14px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 44px;
+    left: 0;
+
+}
+
+
+.slick-prev::after {
+    content: 'Предыдущий товар';
+    font-family: 'Futura PT Book';
+    font-size: 12px;
+    line-height: 14px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 44px;
+    left: 0;
+
+}
+
+.slick-prev:hover:before {
+    content: url('../images/slaider__left-active.png');
+    position: absolute;
+    top: 0;
+    left: 7px;
+}
+
+.slick-next:hover:before {
+    content: url('../images/slaider__left-active.png');
+    transform: rotate(180deg);
+    position: absolute;
+    top: -2px;
+    left: 6px;
+}
+
+
+.slick-next:hover:after,
+
+.slick-prev:hover:after,
+.slick-prev:hover:before {
+    color: #646464;
 }
 
 .slick-bnt:hover {
