@@ -1,11 +1,13 @@
 $(function () {
     $('.active__box-inner').click((event) => {
         $('.active').toggleClass('deactive'),
-            $('.header').toggleClass('header__active')
+            $('.header__box').toggleClass('header__active'),
+            $('body').toggleClass('look')
     });
     $('.header__menu-btn').click((event) => {
         $('.active').removeClass('deactive'),
-            $('.header').removeClass('header__active')
+            $('.header__box').removeClass('header__active'),
+            $('body').toggleClass('look')
     });
 
     $('.image-popup').magnificPopup({
