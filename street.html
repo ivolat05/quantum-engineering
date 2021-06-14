@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -167,7 +168,7 @@
             <div class="slaider__wrapper">
                 <div class="slaider___wrapper-box">
                     <div class="slaider__box-img">
-                        <a href="#">
+                        <a class='image-popup' href="images/slick2.png">
                             <img src="images/lupa.png" alt="">
                         </a>
                         <img src="images/slick2.png" alt="">
@@ -253,7 +254,7 @@
                 </div>
                 <div class="slaider___wrapper-box">
                     <div class="slaider__box-img">
-                        <a href="#">
+                        <a class='image-popup' href="images/slick2.png">
                             <img src="images/lupa.png" alt="">
                         </a>
                         <img src="images/slick2.png" alt="">
@@ -339,7 +340,7 @@
                 </div>
                 <div class="slaider___wrapper-box">
                     <div class="slaider__box-img">
-                        <a href="#">
+                        <a class='image-popup' href="images/slick2.png">
                             <img src="images/lupa.png" alt="">
                         </a>
                         <img src="images/slick2.png" alt="">
@@ -474,21 +475,309 @@
     <section class="datas">
         <div class="conteiner">
             <div class="datas__wrapper">
-                <div class="datas__wrapper-box">
-                    <a href="#" class="datas__box-btn--active">
+                <div id='tabs' class="datas__wrapper-box">
+                    <button class="tab datas__box-btn datas__box-btn--active" data-tab="#tab_1">
                         Характеристики
-                    </a>
-                    <a href="#" class="datas__box-btn">
+                    </button>
+                    <button class="tab datas__box-btn" data-tab="#tab_2">
                         Описание
-                    </a>
-                    <a href="#" class="datas__box-btn">
+                    </button>
+                    <button class="tab datas__box-btn" data-tab="#tab_3">
                         Условия эксплуатации
-                    </a>
-                    <a href="#" class="datas__box-btn">
+                    </button>
+                    <button class="tab datas__box-btn" data-tab="#tab_4">
                         Пример реализации
-                    </a>
+                    </button>
                 </div>
-                <div class="datas__wrapper-inner">
+                <div class="show datas__wrapper-inner" id='tab_1'>
+                    <div class=" datas__inner-text">
+                        <ul>
+                            <li>
+                                <p>
+                                    Диаметр кронштейна под трубу
+                                </p>
+                                <span></span>
+                                <span>
+                                    58 мм
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Степень защиты IP
+                                </p>
+                                <span></span>
+                                <span>
+                                    67
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Питание от сети переменного тока напряжением
+                                </p>
+                                <span></span>
+                                <span>
+                                    170-280 В
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент пульсации не более Кп
+                                </p>
+                                <span></span>
+                                <span>
+                                    1 %
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Индекс цветопередачи не менее
+                                </p>
+                                <span></span>
+                                <span>
+                                    80 Ra
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Время выхода на рабочий режим
+                                </p>
+                                <span></span>
+                                <span>
+                                    1-2 сек
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Цветовая температура (дневной белый)
+                                </p>
+                                <span></span>
+                                <span>
+                                    4900…5000
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент мощности
+                                </p>
+                                <span></span>
+                                <span>
+                                    ≥0,96
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Класс защиты от поражения электрическим током
+                                </p>
+                                <span></span>
+                                <span>
+                                    1
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Декларация о соответствии ТС №: ТС № RU Д- RU.АТ15.В.00458
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="datas__inner-conteiner">
+                        <video width='600' height='405' poster='images/vidio.png'>
+                        </video>
+                    </div>
+                </div>
+                <div class="datas__wrapper-inner" id='tab_2'>
+                    <div class="datas__inner-text">
+                        <ul>
+                            <li>
+                                <p>
+                                    Диаметр кронштейна под трубу
+                                </p>
+                                <span></span>
+                                <span>
+                                    58 мм
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Степень защиты IP
+                                </p>
+                                <span></span>
+                                <span>
+                                    67
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Питание от сети переменного тока напряжением
+                                </p>
+                                <span></span>
+                                <span>
+                                    170-280 В
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент пульсации не более Кп
+                                </p>
+                                <span></span>
+                                <span>
+                                    1 %
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Индекс цветопередачи не менее
+                                </p>
+                                <span></span>
+                                <span>
+                                    80 Ra
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Время выхода на рабочий режим
+                                </p>
+                                <span></span>
+                                <span>
+                                    1-2 сек
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Цветовая температура (дневной белый)
+                                </p>
+                                <span></span>
+                                <span>
+                                    4900…5000
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент мощности
+                                </p>
+                                <span></span>
+                                <span>
+                                    ≥0,96
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Класс защиты от поражения электрическим током
+                                </p>
+                                <span></span>
+                                <span>
+                                    1
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Декларация о соответствии ТС №: ТС № RU Д- RU.АТ15.В.00458
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="datas__inner-conteiner">
+                        <video width='600' height='405' poster='images/vidio.png'>
+                        </video>
+                    </div>
+                </div>
+                <div class="datas__wrapper-inner" id='tab_3'>
+                    <div class="datas__inner-text">
+                        <ul>
+                            <li>
+                                <p>
+                                    Диаметр кронштейна под трубу
+                                </p>
+                                <span></span>
+                                <span>
+                                    58 мм
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Степень защиты IP
+                                </p>
+                                <span></span>
+                                <span>
+                                    67
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Питание от сети переменного тока напряжением
+                                </p>
+                                <span></span>
+                                <span>
+                                    170-280 В
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент пульсации не более Кп
+                                </p>
+                                <span></span>
+                                <span>
+                                    1 %
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Индекс цветопередачи не менее
+                                </p>
+                                <span></span>
+                                <span>
+                                    80 Ra
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Время выхода на рабочий режим
+                                </p>
+                                <span></span>
+                                <span>
+                                    1-2 сек
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Цветовая температура (дневной белый)
+                                </p>
+                                <span></span>
+                                <span>
+                                    4900…5000
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Коэффициент мощности
+                                </p>
+                                <span></span>
+                                <span>
+                                    ≥0,96
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Класс защиты от поражения электрическим током
+                                </p>
+                                <span></span>
+                                <span>
+                                    1
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    Декларация о соответствии ТС №: ТС № RU Д- RU.АТ15.В.00458
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="datas__inner-conteiner">
+                        <video width='600' height='405' poster='images/vidio.png'>
+                        </video>
+                    </div>
+                </div>
+                <div class="datas__wrapper-inner" id='tab_4'>
                     <div class="datas__inner-text">
                         <ul>
                             <li>
@@ -683,6 +972,36 @@
 
         });
     </script>
+
+    <script>
+        const tabBtn = document.querySelectorAll('.datas__box-btn');
+        const tabItem = document.querySelectorAll('.datas__wrapper-inner');
+
+
+
+        tabBtn.forEach(function (item) {
+            item.addEventListener('click', function () {
+                let currentBtn = item;
+                let tabId = currentBtn.getAttribute('data-tab');
+                let currentTab = document.querySelector(tabId);
+
+                if (!currentBtn.classList.contains('datas__box-btn--active')) {
+                    tabBtn.forEach(function (item) {
+                        item.classList.remove('datas__box-btn--active')
+                    });
+                    tabItem.forEach(function (item) {
+                        item.classList.remove('show')
+                    });
+
+                    currentBtn.classList.add('datas__box-btn--active');
+                    currentTab.classList.add('show')
+                }
+
+
+            });
+        });
+    </script>
+    <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/main.js"></script>
 </body>
 

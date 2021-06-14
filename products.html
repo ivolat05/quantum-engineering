@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -150,21 +151,22 @@
     <div class="filter">
         <div class="conteiner">
             <div class="filter__wrapp">
-                <a href="#" class="filter__wrapp-btn--active">
+                <button class="tab filter__wrapp-btn filter__wrapp-btn--active" data-tab="#tab_1">
                     Уличные светильники
                     <span>
                         8
                     </span>
-                </a>
-                <a href="#" class="filter__wrapp-btn">
+                </button>
+                <button class="tab filter__wrapp-btn" data-tab="#tab_2">
                     <p>
                         Промышленные светильники
                     </p>
                     <span>
                         7
                     </span>
-                </a>
-                <a href="#" class="filter__wrapp-btn filter__wrapp-btn-two">
+                </button>
+
+                <button class="tab filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_3">
                     <p>
                         Светодиодные светильники<br>
                         для сельского хозяйства
@@ -172,8 +174,8 @@
                     <span>
                         4
                     </span>
-                </a>
-                <a href="#" class="filter__wrapp-btn filter__wrapp-btn-two">
+                </button>
+                <button class="tab filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_4">
                     <p>
                         Освещение спортивных<br>
                         объектов
@@ -181,84 +183,272 @@
                     <span>
                         5
                     </span>
-                </a>
+                </button>
             </div>
         </div>
-        <div class="filter__box">
+        <div class="show-active filter__box" id='tab_1'>
             <div class="conteiner">
-                <div class="filter__box-inner ">
-                    <a href="#" class="filter__box-btn--active">
-                        <p>
-                            Освещение дорог местного<br>
-                            назначения
-                        </p>
+                <div class="filter__box-inner tab-h">
+                    <a href="#" class="tab-h filter__box-btn filter__box-btn--active" data-active='0'>
+                        Освещение дорог местного<br>
+                        назначения
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Мачтовое освещение
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn " data-active='1'>
+                        Мачтовое освещение
                         <span>
                             9
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Освещение магистралей
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='2'>
+                        Освещение магистралей
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Освещение дорог местного<br>
-                            назначения
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='3'>
+                        Освещение дорог местного<br>
+                        назначения
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Освещение детских<br>
-                            площадок
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='4'>
+                        Освещение детских<br>
+                        площадок
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Светодиодное освещение<br>
-                            пешеходных переходов
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='5'>
+                        Светодиодное освещение<br>
+                        пешеходных переходов
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Садово-парковые<br>
-                            светильники
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='6'>
+                        Садово-парковые<br>
+                        светильники
                         <span>
                             21
                             <img src="images/box.png" alt="">
                         </span>
                     </a>
-                    <a href="#" class="filter__box-btn">
-                        <p>
-                            Освещение автостоянок
-                        </p>
+                    <a href="#" class="tab-h filter__box-btn" data-active='7'>
+                        Освещение автостоянок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter__box" id='tab_2'>
+            <div class="conteiner">
+                <div class="filter__box-inner clic-2 tab-h">
+                    <a href="#" class="tab-h   filter__box-btn click__btn-2" data-active='0'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='1'>
+                        Мачтовое освещение
+                        <span>
+                            9
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='2'>
+                        Освещение магистралей
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='3'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='4'>
+                        Освещение детских<br>
+                        площадок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='5'>
+                        Светодиодное освещение<br>
+                        пешеходных переходов
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='6'>
+                        Садово-парковые<br>
+                        светильники
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-2" data-active='7'>
+                        Освещение автостоянок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter__box" id='tab_3'>
+            <div class="conteiner">
+                <div class="filter__box-inner click-3 tab-h">
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='0'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='1'>
+                        Мачтовое освещение
+                        <span>
+                            9
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='2'>
+                        Освещение магистралей
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='3'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='4'>
+                        Освещение детских<br>
+                        площадок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='5'>
+                        Светодиодное освещение<br>
+                        пешеходных переходов
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='6'>
+                        Садово-парковые<br>
+                        светильники
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-3" data-active='7'>
+                        Освещение автостоянок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter__box" id='tab_4'>
+            <div class="conteiner">
+                <div class="filter__box-inner click-4 tab-h">
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='0'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='1'>
+                        Мачтовое освещение
+                        <span>
+                            9
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='2'>
+                        Освещение магистралей
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='3'>
+                        Освещение дорог местного<br>
+                        назначения
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='4'>
+                        Освещение детских<br>
+                        площадок
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='5'>
+                        Светодиодное освещение<br>
+                        пешеходных переходов
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='6'>
+                        Садово-парковые<br>
+                        светильники
+                        <span>
+                            21
+                            <img src="images/box.png" alt="">
+                        </span>
+                    </a>
+                    <a href="#" class="tab-h filter__box-btn click__btn-4" data-active='7'>
+                        Освещение автостоянок
                         <span>
                             21
                             <img src="images/box.png" alt="">
@@ -273,11 +463,10 @@
             <div class="discount__wrapper">
                 <h2>
                     СО СКИДКОЙ
-
                 </h2>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -301,7 +490,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -364,7 +553,7 @@
             <div class="discount__wrapper">
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -385,7 +574,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -406,7 +595,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -427,7 +616,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -448,7 +637,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -469,7 +658,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -490,7 +679,7 @@
                 </div>
                 <div class="discount__wrapper-box">
                     <img src="images/dixcount__img.png" alt="">
-                    <a href="#">
+                    <a class='image-popup' href="images/dixcount__img.png">
                         <img src="images/lupa.png" alt="">
                     </a>
                     <div class="discount__wrapper-text">
@@ -595,8 +784,43 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script>
+        $('.image-popup').magnificPopup({
+            type: 'image',
+            closeBtnInside: false
+        });
+    </script>
+    <script>
+        const tabBtn = document.querySelectorAll('.filter__wrapp-btn');
+        const tabItem = document.querySelectorAll('.filter__box');
+
+        tabBtn.forEach(function (item) {
+            item.addEventListener('click', function () {
+                let currentBtn = item;
+                let tabId = currentBtn.getAttribute('data-tab');
+                let currentTab = document.querySelector(tabId);
+
+                if (!currentBtn.classList.contains('filter__wrapp-btn--active')) {
+                    tabBtn.forEach(function (item) {
+                        item.classList.remove('filter__wrapp-btn--active')
+                    });
+                    tabItem.forEach(function (item) {
+                        item.classList.remove('show-active')
+                    });
+
+                    currentBtn.classList.add('filter__wrapp-btn--active');
+                    currentTab.classList.add('show-active')
+                }
+
+
+            });
+        });
+    </script>
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
