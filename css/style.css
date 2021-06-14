@@ -2154,36 +2154,6 @@ li span:nth-child(2) {
     }
 }
 
-/*--------------request-------------------*/
-
-@media(max-width: 850px) {
-    .request__wrapper {
-        margin: 10px;
-    }
-
-    .form__box-inner input,
-    .form__box-textarea textarea {
-        max-width: 100%;
-    }
-}
-
-@media(max-width: 650px) {
-    .request__btn .button {
-        padding: 2px 59px;
-    }
-
-    .request__wrapper {
-        padding: 20px;
-    }
-
-    .request__btn {
-        width: 225px;
-    }
-
-    .request__wrapper h2 {
-        text-align: left;
-    }
-}
 
 /*--------------------active box-------------------*/
 
@@ -2456,4 +2426,149 @@ li span:nth-child(2) {
 .schema__wrapp {
 
     overflow-x: scroll;
+}
+
+/*------------payment---------------*/
+@media(max-width: 1810px) {
+    .form__box-inner-fixs input {
+        width: 700px;
+    }
+
+    .form__box-textarea-fixs textarea {
+        width: 700px;
+    }
+
+    .form__box-inner-fix {
+        width: 700px;
+        margin-top: -26px;
+    }
+
+    .form__box-inner-fix input {
+        width: 100%;
+        margin-top: -2px;
+    }
+
+}
+
+@media(max-width: 1580px) {
+    .form__box-inner-fixs input {
+        width: 500px;
+    }
+
+    .form__box-textarea-fixs textarea {
+        width: 500px;
+    }
+
+    .form__box-inner-fix {
+        width: 500px;
+        margin-top: -2px;
+    }
+
+    .form__box-inner-fix input {
+        width: 100%;
+        margin-top: -2px;
+    }
+}
+
+@media(max-width:1150px) {
+    .form__box {
+        display: block;
+    }
+
+    .form__box-inner input {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .form__box-textarea textarea {
+
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .form__box-inner-fix {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form__textarea-inner {
+        width: 100%;
+    }
+
+    .calculation__btn {
+        display: block;
+    }
+
+    .calculation__checbox-fix {
+        margin: 0 auto;
+        position: relative;
+        top: -137px;
+    }
+
+    .calculation__btn {
+        width: 100%;
+    }
+
+    .calculation__btn-fix button {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 40px;
+    }
+
+
+}
+
+@media(max-width: 640px) {
+    .calculation__btn-fix button {
+        margin: 0 auto;
+        padding: 2px 59px;
+
+    }
+
+    .calculation__wrapper {
+        padding: 10px;
+    }
+
+    .calculation__checbox-fix {
+        top: -84px;
+    }
+}
+
+/*--------------request-------------------*/
+@media(max-width: 1200px) {
+    .request__btn button {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width: 850px) {
+    .request__wrapper {
+        margin: 10px;
+    }
+
+    .form__box-inner input,
+    .form__box-textarea textarea {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 650px) {
+    .request__btn .button {
+        padding: 2px 59px;
+    }
+
+    .request__wrapper {
+        padding: 20px;
+    }
+
+    .request__btn {
+        width: 225px;
+    }
+
+    .request__wrapper h2 {
+        text-align: left;
+    }
 }
