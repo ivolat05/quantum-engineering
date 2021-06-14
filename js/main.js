@@ -10,7 +10,10 @@ $(function () {
             $('body').toggleClass('look')
     });
 
-
+    $('.image-popup').magnificPopup({
+        type: 'image',
+        closeBtnInside: false
+    });
     document.querySelector('.filter__box-inner').addEventListener('click', ftab);
     document.querySelector('.clic-2').addEventListener('click', tabsTwo);
     document.querySelector('.click-3').addEventListener('click', tabsThree);
