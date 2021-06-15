@@ -2461,6 +2461,14 @@ li span:nth-child(2) {
     }
 }
 
+@media(max-width: 450px) {
+    .form__textarea-inner img {
+        position: relative;
+        top: -42px;
+        left: 133px;
+    }
+}
+
 /*--------------request-------------------*/
 @media(max-width: 1200px) {
     .request__btn button {
