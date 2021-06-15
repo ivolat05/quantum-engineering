@@ -154,35 +154,32 @@
     <div class="filter">
         <div class="conteiner">
             <div class="filter__wrapp">
-                <button class="tab marker-1 filter__wrapp-btn filter__wrapp-btn--active" data-tab="#tab_1">
+                <button class="tab  filter__wrapp-btn filter__wrapp-btn--active" data-tab="#tab_1">
+                    <i class="marker-1"></i>
                     Уличные светильники
                     <span>
                         8
                     </span>
                 </button>
-                <button class="tab marker-2 filter__wrapp-btn" data-tab="#tab_2">
-                    <p>
-                        Промышленные светильники
-                    </p>
+                <button class="tab filter__wrapp-btn" data-tab="#tab_2">
+                    <i class="marker-2"></i>
+                    Промышленные светильники
                     <span>
                         7
                     </span>
                 </button>
-
-                <button class="tab marker-3 filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_3">
-                    <p>
-                        Светодиодные светильники<br>
-                        для сельского хозяйства
-                    </p>
+                <button class="tab filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_3">
+                    <i class="marker-3"></i>
+                    Светодиодные светильники<br>
+                    для сельского хозяйства
                     <span>
                         4
                     </span>
                 </button>
-                <button class="tab marker-4 filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_4">
-                    <p>
-                        Освещение спортивных<br>
-                        объектов
-                    </p>
+                <button class="tab filter__wrapp-btn filter__wrapp-btn-two" data-tab="#tab_4">
+                    <i class="marker-4"></i>
+                    Освещение спортивных<br>
+                    объектов
                     <span>
                         5
                     </span>
@@ -257,7 +254,6 @@
                 </div>
             </div>
         </div>
-
         <div class="filter__box" id='tab_2'>
             <div class="conteiner">
                 <div class="filter__box-inner clic-2 tab-h">
@@ -325,7 +321,6 @@
                 </div>
             </div>
         </div>
-
         <div class="filter__box" id='tab_3'>
             <div class="conteiner">
                 <div class="filter__box-inner click-3 tab-h">
@@ -393,7 +388,6 @@
                 </div>
             </div>
         </div>
-
         <div class="filter__box" id='tab_4'>
             <div class="conteiner">
                 <div class="filter__box-inner click-4 tab-h">
@@ -821,6 +815,69 @@
 
             });
         });
+    </script>
+    <script>
+        document.querySelector('.filter__box-inner').addEventListener('click', ftab);
+        document.querySelector('.clic-2').addEventListener('click', tabsTwo);
+        document.querySelector('.click-3').addEventListener('click', tabsThree);
+        document.querySelector('.click-4').addEventListener('click', tabsFour);
+
+        function ftab(event) {
+            var dataActive = event.target.getAttribute('data-active');
+            var tabActive = document.getElementsByClassName('filter__box-btn');
+
+
+            console.log(tabActive)
+            console.log(dataActive);
+            for (var x = 0; x < tabActive.length; x++) {
+                if (dataActive == x) {
+
+                    tabActive[x].classList.toggle('filter__box-btn--active')
+                }
+            }
+        };
+
+        function tabsTwo(event) {
+            var
+                dataActive = event.target.getAttribute('data-active');
+            var
+                tabActive = document.getElementsByClassName('click__btn-2');
+
+            for (var x = 0; x < tabActive.length; x++) {
+                if (dataActive == x) {
+
+                    tabActive[x].classList.toggle('filter__box-btn--active')
+                }
+            }
+        };
+
+        function tabsThree(event) {
+            var
+                dataActive = event.target.getAttribute('data-active');
+            var
+                tabActive = document.getElementsByClassName('click__btn-3');
+
+            for (var x = 0; x < tabActive.length; x++) {
+                if (dataActive == x) {
+
+                    tabActive[x].classList.toggle('filter__box-btn--active')
+                }
+            }
+        };
+
+        function tabsFour(event) {
+            var
+                dataActive = event.target.getAttribute('data-active');
+            var
+                tabActive = document.getElementsByClassName('click__btn-4');
+
+            for (var x = 0; x < tabActive.length; x++) {
+                if (dataActive == x) {
+
+                    tabActive[x].classList.toggle('filter__box-btn--active')
+                }
+            }
+        };
     </script>
 
     <script src="js/main.js"></script>
